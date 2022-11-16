@@ -1,0 +1,306 @@
+{
+  "config" : {
+    "speedmentVersion" : "Speedment:3.2.10",
+    "nameProtected" : false,
+    "expanded" : true,
+    "appId" : "b624a237-f54a-4f12-a45b-0db1351bf4e6",
+    "companyName" : "Rafael Alcocer Caldera",
+    "name" : " Spring Boot Speedment Example",
+    "packageLocation" : "src/main/java/",
+    "id" : "public",
+    "packageName" : "rafael.alcocer.caldera.speedment",
+    "dbmses" : [
+      {
+        "expanded" : true,
+        "port" : 5434,
+        "schemas" : [
+          {
+            "tables" : [
+              {
+                "expanded" : true,
+                "primaryKeyColumns" : [
+                  {
+                    "expanded" : true,
+                    "name" : "id",
+                    "id" : "id",
+                    "ordinalPosition" : 1,
+                    "enabled" : true
+                  }
+                ],
+                "indexes" : [
+                  {
+                    "expanded" : false,
+                    "unique" : true,
+                    "name" : "roles_pkey",
+                    "indexColumns" : [
+                      {
+                        "orderType" : "ASC",
+                        "expanded" : true,
+                        "name" : "id",
+                        "id" : "id",
+                        "ordinalPosition" : 1
+                      }
+                    ],
+                    "id" : "roles_pkey",
+                    "enabled" : true
+                  }
+                ],
+                "isView" : false,
+                "columns" : [
+                  {
+                    "databaseType" : "java.lang.Integer",
+                    "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "autoIncrement" : true,
+                    "name" : "id",
+                    "id" : "id",
+                    "ordinalPosition" : 1,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.String",
+                    "expanded" : true,
+                    "nullable" : true,
+                    "name" : "name",
+                    "id" : "name",
+                    "ordinalPosition" : 2,
+                    "enabled" : true
+                  }
+                ],
+                "name" : "roles",
+                "id" : "roles",
+                "enabled" : true
+              },
+              {
+                "foreignKeys" : [
+                  {
+                    "expanded" : false,
+                    "foreignKeyColumns" : [
+                      {
+                        "foreignDatabaseName" : "testdb",
+                        "foreignSchemaName" : "public",
+                        "expanded" : true,
+                        "name" : "role_id",
+                        "foreignColumnName" : "id",
+                        "id" : "role_id",
+                        "foreignTableName" : "roles",
+                        "ordinalPosition" : 1
+                      }
+                    ],
+                    "name" : "fkh8ciramu9cc9q3qcqiv4ue8a6",
+                    "id" : "fkh8ciramu9cc9q3qcqiv4ue8a6",
+                    "enabled" : true
+                  },
+                  {
+                    "expanded" : false,
+                    "foreignKeyColumns" : [
+                      {
+                        "foreignDatabaseName" : "testdb",
+                        "foreignSchemaName" : "public",
+                        "expanded" : true,
+                        "name" : "user_id",
+                        "foreignColumnName" : "id",
+                        "id" : "user_id",
+                        "foreignTableName" : "users",
+                        "ordinalPosition" : 1
+                      }
+                    ],
+                    "name" : "fkhfh9dx7w3ubf1co1vdev94g3f",
+                    "id" : "fkhfh9dx7w3ubf1co1vdev94g3f",
+                    "enabled" : true
+                  }
+                ],
+                "expanded" : true,
+                "primaryKeyColumns" : [
+                  {
+                    "expanded" : true,
+                    "name" : "user_id",
+                    "id" : "user_id",
+                    "ordinalPosition" : 1,
+                    "enabled" : true
+                  },
+                  {
+                    "expanded" : true,
+                    "name" : "role_id",
+                    "id" : "role_id",
+                    "ordinalPosition" : 2,
+                    "enabled" : true
+                  }
+                ],
+                "indexes" : [
+                  {
+                    "expanded" : false,
+                    "unique" : true,
+                    "name" : "user_roles_pkey",
+                    "indexColumns" : [
+                      {
+                        "orderType" : "ASC",
+                        "expanded" : true,
+                        "name" : "user_id",
+                        "id" : "user_id",
+                        "ordinalPosition" : 1
+                      },
+                      {
+                        "orderType" : "ASC",
+                        "expanded" : true,
+                        "name" : "role_id",
+                        "id" : "role_id",
+                        "ordinalPosition" : 2
+                      }
+                    ],
+                    "id" : "user_roles_pkey",
+                    "enabled" : true
+                  }
+                ],
+                "isView" : false,
+                "columns" : [
+                  {
+                    "databaseType" : "java.lang.Long",
+                    "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "name" : "user_id",
+                    "id" : "user_id",
+                    "ordinalPosition" : 1,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.Integer",
+                    "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "name" : "role_id",
+                    "id" : "role_id",
+                    "ordinalPosition" : 2,
+                    "enabled" : true
+                  }
+                ],
+                "name" : "user_roles",
+                "id" : "user_roles",
+                "enabled" : true
+              },
+              {
+                "expanded" : true,
+                "primaryKeyColumns" : [
+                  {
+                    "expanded" : true,
+                    "name" : "id",
+                    "id" : "id",
+                    "ordinalPosition" : 1,
+                    "enabled" : true
+                  }
+                ],
+                "indexes" : [
+                  {
+                    "expanded" : false,
+                    "unique" : true,
+                    "name" : "uk6dotkott2kjsp8vw4d0m25fb7",
+                    "indexColumns" : [
+                      {
+                        "orderType" : "ASC",
+                        "expanded" : true,
+                        "name" : "email",
+                        "id" : "email",
+                        "ordinalPosition" : 1
+                      }
+                    ],
+                    "id" : "uk6dotkott2kjsp8vw4d0m25fb7",
+                    "enabled" : true
+                  },
+                  {
+                    "expanded" : false,
+                    "unique" : true,
+                    "name" : "ukr43af9ap4edm43mmtq01oddj6",
+                    "indexColumns" : [
+                      {
+                        "orderType" : "ASC",
+                        "expanded" : true,
+                        "name" : "username",
+                        "id" : "username",
+                        "ordinalPosition" : 1
+                      }
+                    ],
+                    "id" : "ukr43af9ap4edm43mmtq01oddj6",
+                    "enabled" : true
+                  },
+                  {
+                    "expanded" : false,
+                    "unique" : true,
+                    "name" : "users_pkey",
+                    "indexColumns" : [
+                      {
+                        "orderType" : "ASC",
+                        "expanded" : true,
+                        "name" : "id",
+                        "id" : "id",
+                        "ordinalPosition" : 1
+                      }
+                    ],
+                    "id" : "users_pkey",
+                    "enabled" : true
+                  }
+                ],
+                "isView" : false,
+                "columns" : [
+                  {
+                    "databaseType" : "java.lang.Long",
+                    "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "autoIncrement" : true,
+                    "name" : "id",
+                    "id" : "id",
+                    "ordinalPosition" : 1,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.String",
+                    "expanded" : true,
+                    "nullable" : true,
+                    "name" : "email",
+                    "id" : "email",
+                    "ordinalPosition" : 2,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.String",
+                    "expanded" : true,
+                    "nullable" : true,
+                    "name" : "password",
+                    "id" : "password",
+                    "ordinalPosition" : 3,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.String",
+                    "expanded" : true,
+                    "nullable" : true,
+                    "name" : "username",
+                    "id" : "username",
+                    "ordinalPosition" : 4,
+                    "enabled" : true
+                  }
+                ],
+                "name" : "users",
+                "id" : "users",
+                "enabled" : true
+              }
+            ],
+            "expanded" : true,
+            "name" : "public",
+            "id" : "public",
+            "enabled" : true
+          }
+        ],
+        "typeName" : "PostgreSQL",
+        "ipAddress" : "127.0.0.1",
+        "name" : "testdb",
+        "id" : "testdb",
+        "enabled" : true,
+        "username" : "postgres"
+      }
+    ],
+    "enabled" : true
+  }
+}

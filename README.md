@@ -1,12 +1,22 @@
-# SPRING BOOT AUTHENTICATION POSTGRESQL
+# SPRING BOOT SPEEDMENT EXAMPLE WITH POSTGRESQL
 
 ## Synopsis
 
 The project is a Spring Boot Application with PostgresQL as a Database to test Speedment Open Source. 
 
-## Speedment Open Source
+## Speedment Open Source URLs
 
-[Speedment Quick Start OSS](https://speedment.com/oss-download/)
+[Speedment Open Source Download](https://speedment.com/oss-download/)
+
+[Speedment Quick Start Guide](https://speedment.com/quick-start/)
+
+## Why Speedment Open Source?
+
+- Speedment Open Source is the equivalent of Speedment Stream limited to use with Open Source databases. Like Stream, it analyzes the metadata of an existing SQL database and automatically creates a Java representation of the data model. Queries are then expressed as standard Java Streams instead of a sequences of SQL constructs.
+
+- There are several license types available, of which two are free to use; Speedment Open Source and Speedment Free. Speedment Stream and Speedment HyperStream are priced depending on the number of nodes used and the required support level.
+
+- View Database Tables as Standard Java Streams.
 
 ## Motivation
 

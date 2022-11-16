@@ -20,7 +20,7 @@ The project is a Spring Boot Application with PostgresQL as a Database to test S
 
 ## Motivation
 
-I wanted to do an authentication service.
+I wanted check if Speedment is what it claims to do.
 
 ## Pre Requirements
 

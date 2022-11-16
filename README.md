@@ -302,7 +302,7 @@ public final class SpringBootSpeedmentExampleEntryPoint {
 
 ```
 
-This is the result:
+This is the result when running SpringBootSpeedmentExampleEntryPoint:
 
 ```
 
